@@ -1,6 +1,9 @@
+const isSubfolder = window.location.pathname.includes('/tasks/');
+const basePath = isSubfolder ? '../' : '';
+
 const headerHTML = `
 <header class="header">
-    <a href="index.html" class="logo">
+    <a href="${basePath}index.html" class="logo">
         <span class="circle circle-1"></span>
         <span class="circle circle-2"></span>
         <span class="circle circle-3"></span>
@@ -14,11 +17,11 @@ const headerHTML = `
     </button>
     
     <ul class="menu" id="menu">
-        <li><a href="/index.html">Главная</a></li>
-        <li><a href="/about.html">О нас</a></li>
-        <li><a href="/desserts.html">Наши десерты</a></li>
-        <li><a href="/order.html">Сделать заказ</a></li>
-        <li><a href="/tasks/task2.html">Задания</a></li>
+        <li><a href="${basePath}index.html">Главная</a></li>
+        <li><a href="${basePath}about.html">О нас</a></li>
+        <li><a href="${basePath}desserts.html">Наши десерты</a></li>
+        <li><a href="${basePath}order.html">Сделать заказ</a></li>
+        <li><a href="${basePath}tasks/task2.html">Задания</a></li>
     </ul>
 
     <div class="social-icons">
@@ -48,7 +51,7 @@ const footerHTML = `
         </div>
 
         <div class="footer-right">
-            <img src="../img/tortik2.png" class="footer-character">
+            <img src="${basePath}img/tortik2.png" class="footer-character">
         </div>
     </div>
     <div class="footer-bg-text">BONBONIE</div>
@@ -100,4 +103,4 @@ buttons.forEach(function(btn) {
         event.preventDefault(); 
         alert('"переход" в соцсеть :)'); 
     });
-  });
+});
