@@ -1,0 +1,380 @@
+.page {
+    background-color: #fbf4fa;
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+.desserts-section {
+    background-color: #fbf4fa;
+    padding: 2rem 2rem;
+}
+
+.desserts-container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.desserts-intro {
+    text-align: left;
+    color: #7a6b70;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.category-block {
+    margin-bottom: 4rem;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9cdd5;
+}
+
+.category-title {
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 1.8rem;
+    color: #a83c58;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.btn-order {
+    text-decoration: none;
+    color: #d14b6a;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-order:hover {
+    transform: translateX(5px);
+}
+
+
+.gallery-wrapper {
+    position: relative;
+    padding: 0 1.5rem;
+}
+
+.gallery-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(168, 60, 88, 0.1);
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #f0e6e9;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 1;
+    color: #d14b6a;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 0.3rem 0.8rem rgba(168, 60, 88, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.gallery-wrapper:hover .scroll-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-btn:hover {
+    background-color: #d14b6a;
+    color: #ffffff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-left {
+    left: -1rem;
+}
+
+.scroll-right {
+    right: -1rem;
+}
+
+.scroll-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+
+.designs-block {
+    margin-top: 4rem;
+}
+
+.designs-intro {
+    text-align: center;
+    max-width: 45rem;
+    margin: 0 auto 2rem auto;
+    color: #7a6b70;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.designs-intro p {
+    margin-bottom: 0.8rem;
+}
+
+.designs-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.designs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.design-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(168, 60, 88, 0.06);
+    border: 1px solid #f0e6e9;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.design-card:hover {
+    transform: translateY(-5px);
+}
+
+.design-card img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.design-card p {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #a83c58;
+    margin: 0;
+}
+
+
+
+.desserts-cta {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(168, 60, 88, 0.06);
+    border: 1px solid #f0e6e9;
+    margin-top: 1rem;
+}
+
+.desserts-cta h3 {
+    font-size: 1.5rem;
+    color: #a83c58;
+    margin-bottom: 0.5rem;
+}
+
+.desserts-cta p {
+    color: #7a6b70;
+    font-size: 1rem;
+}
+
+
+
+.packaging-block {
+    margin-top: 4rem;
+    background-color: #ffffff;
+    padding: 3rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(168, 60, 88, 0.06);
+    border: 1px solid #f0e6e9;
+}
+
+.packaging-intro {
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto 2.5rem auto;
+    color: #7a6b70;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.packaging-intro p {
+    margin-bottom: 0.8rem;
+}
+
+.packaging-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.packaging-item {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(168, 60, 88, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.packaging-item:hover {
+    transform: scale(1.03);
+}
+
+.packaging-item img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .desserts-intro {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-wrapper {
+        position: relative;
+        padding: 0.7rem;
+    }
+
+    .category-block {
+        margin-bottom: 1rem;
+    }
+
+    .gallery-scroll {
+        gap: 1rem;
+    }
+
+    .gallery-item {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .designs-block {
+        margin-top: 1rem;
+    }
+
+    .designs-block {
+        margin-bottom: 0rem;
+        margin-top: 2.5rem;
+    }
+
+    .category-title {
+        margin-bottom: 0.1rem;
+        line-height: 2rem;
+    }
+
+    .design-card img {
+        height: 8rem;
+        width: 8rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .designs-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .designs-intro {
+        margin-bottom: 1rem;
+    }
+
+    .design-card {
+        padding: 0.5rem;
+    }
+
+    .packaging-block {
+        padding-top: 0rem;
+    }
+
+    .packaging-grid {
+        gap: 0.5rem;
+    }
+
+    .packaging-item img {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .packaging-block {
+        padding: 1rem;
+        margin-top: 1.8rem;
+    }
+
+    .desserts-cta h3 {
+        margin-top: 0.2rem;
+        line-height: 2rem;
+    }
+
+    .desserts-cta p {
+        margin-top: 0.2rem;
+    }
+
+    .desserts-intro,
+    .designs-intro,
+    .packaging-intro,
+    .desserts-cta p {
+        color: #3c2e32;
+    }
+    .packaging-item img {
+    width: 100%;
+}
+}

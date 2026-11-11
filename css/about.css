@@ -1,0 +1,121 @@
+.page {
+    background-color: #fbf4fa; 
+    padding-top: 1.5rem; 
+    position: relative; 
+}
+
+.about-section {
+    background-color: #fbf4fa;
+    padding: 3rem 2rem;
+}
+
+.about-container {
+    max-width: 80rem; 
+    margin: 0 auto;
+}
+
+.about-header-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 2rem;
+    flex-wrap: wrap; 
+    gap: 1rem;
+}
+
+.about-content {
+    font-size: 1.05rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 2rem rgba(168, 60, 88, 0.05);
+    border: 1px solid #f0e6e9;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    text-align: left; 
+}
+
+.about-content strong {
+    color: #d14b6a;
+    font-weight: 700;
+}
+
+
+.about-img {
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0.5rem 1rem rgba(168, 60, 88, 0.15));
+    transition: transform 0.3s ease;
+}
+.about-img:hover {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+
+.float-left {
+    float: left;
+    margin: 0 2rem 1.5rem 0; 
+}
+.float-right {
+    float: right;
+    margin: 0 0 1.5rem 2rem; 
+}
+
+
+.img-1 {
+    width: 26rem; 
+    shape-outside: circle(50%); 
+}
+.img-2 {
+    width: 18rem; 
+    shape-outside: url('../img/tortik5.png'); 
+    shape-image-threshold: 0.5; 
+    shape-margin: 2rem;
+}
+.img-3 {
+    width: 18rem; 
+    shape-outside: url('../img/tortik7.png'); 
+    shape-image-threshold: 0.5; 
+    shape-margin: 2rem;
+}
+.img-4 {
+    width: 12rem; 
+    shape-outside: url('../img/tortik6.png'); 
+    shape-image-threshold: 0.5; 
+    shape-margin: 2rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .about-section {
+        padding: 1rem 0.5rem;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+        font-size: 1rem;
+        color: #3c2e32;
+    }
+    .img-1, .img-2, .img-3, .img-4 {
+        width: 35% ;
+    }
+    .about-socials {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column; 
+        gap: 0.3rem;
+    }
+     .about-socials .social-btn {
+        font-size: 0.7rem;
+        padding: 1rem 1.5rem;
+        max-width: 10rem;
+        text-align: center;
+    }
+   
+}

@@ -1,0 +1,982 @@
+.page {
+    background-color: #e9a3be;
+    padding-top: 1.5rem;
+    position: relative;
+}
+
+.hero {
+    background-color: #e9a3be;
+    position: relative;
+    padding: 3rem 1rem 4rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-title {
+    font-family: 'Sloop Script One', cursive;
+    font-size: 8rem;
+    color: #ffffff;
+    line-height: 1;
+    letter-spacing: 0.6rem;
+    margin-bottom: -1rem;
+    text-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+}
+
+.hero-subtitle {
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    margin-bottom: 2.5rem;
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #d14b6a;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 0.3rem 1rem rgba(209, 75, 106, 0.3);
+}
+
+.btn-hero:hover {
+    background-color: #b83856;
+    transform: translateY(-3px);
+}
+
+.floating-cake {
+    position: absolute;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.15);
+    z-index: 5;
+    transition: transform 0.3s ease;
+}
+
+.floating-cake:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.cake-1 {
+    top: 10%;
+    left: 8%;
+    width: 9rem;
+    height: 9rem;
+    transform: rotate(-10deg);
+}
+
+.cake-2 {
+    top: 5%;
+    right: 10%;
+    width: 8rem;
+    height: 8rem;
+    transform: rotate(8deg);
+}
+
+.cake-3 {
+    bottom: 12%;
+    left: 8%;
+    width: 10rem;
+    height: 10rem;
+    transform: rotate(5deg);
+}
+
+.cake-4 {
+    bottom: 10%;
+    right: 8%;
+    width: 11rem;
+    height: 11rem;
+    transform: rotate(-5deg);
+}
+
+
+.img-flower {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(275deg) brightness(1);
+}
+
+.flower-1 {
+    top: 15%;
+    left: 20%;
+    width: 110px;
+    transform: rotate(15deg);
+}
+
+.flower-2 {
+    top: 35%;
+    left: 80%;
+    width: 90px;
+    transform: translateX(-50%);
+}
+
+.flower-3 {
+    bottom: 0%;
+    right: 32%;
+    width: 150px;
+    transform: rotate(-20deg);
+}
+
+
+.line {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.line-1 {
+    width: 80%;
+    height: 120%;
+    top: -20%;
+    left: -10%;
+    transform: rotate(15deg);
+}
+
+.line-2 {
+    width: 70%;
+    height: 100%;
+    bottom: -10%;
+    right: -5%;
+    transform: rotate(-25deg);
+}
+
+.section-title {
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 2.5rem;
+    color: #a83c58;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+/* БЛОК ПРЕИМУЩЕСТВ */
+.benefits-section {
+    background-color: #fbf4fa;
+    padding: 2rem 2rem 1rem;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    max-width: 65rem;
+    margin: 2rem auto 0;
+}
+
+.benefit-card {
+    background-color: #ffffff;
+    height: 15rem;
+    padding: 2rem 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(168, 60, 88, 0.06);
+    border: 1px solid #f0e6e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(168, 60, 88, 0.12);
+}
+
+.benefit-icon {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 0.5rem 1rem rgba(168, 60, 88, 0.1);
+    padding: 0.5rem;
+}
+
+.benefit-title {
+    font-size: 1.1rem;
+    color: #a83c58;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.benefit-text {
+    font-size: 0.9rem;
+    color: #7a6b70;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* БЛОК ТОРТОВ */
+.cakes-section {
+    padding: 1rem 2rem 4rem;
+    background-color: #fbf4fa;
+    text-align: center;
+}
+
+.cakes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.cake-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.5rem rgba(168, 60, 88, 0.08);
+    border: 1px solid #f0e6e9;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cake-card:hover,
+.cupcake-card:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(168, 60, 88, 0.15);
+}
+
+.cake-img-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+    background-color: #f9f9f9;
+}
+
+.cake-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hit-badge {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    background-color: #d14b6a;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.cake-info {
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cake-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.cake-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.cake-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #d14b6a;
+}
+
+.cake-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    text-align: left;
+}
+
+.cake-details li {
+    font-size: 0.8rem;
+    color: #7a6b70;
+    margin-bottom: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.detail-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.btn-order {
+    display: block;
+    width: 90%;
+    padding: 0.7rem;
+    background-color: #d14b6a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background 0.3s;
+    margin-top: auto;
+}
+
+.btn-order:hover {
+    background-color: #b83856;
+}
+
+/* БЛОК ВКУСОВ */
+.taste-section {
+    background-color: #fbf4fa;
+    padding: 0.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.taste-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+.taste-left {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.speech-text {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    position: relative;
+    margin-bottom: 2rem;
+    max-width: 25rem;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.speech-text::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    left: 2rem;
+    border-width: 1.5rem 1.5rem 0;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.speech-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: 500;
+}
+
+.speech-text:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.character-img {
+    width: 16rem;
+    height: auto;
+    object-fit: contain;
+    margin-left: 2rem;
+    filter: drop-shadow(0 0.3rem 0.3rem rgba(0, 0, 0, 0.15));
+}
+
+.taste-right {
+    flex: 2;
+}
+
+.tastes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.taste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.taste-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M 5 2 Q 10 8 15 2 T 25 2 T 35 2 T 45 2 T 55 2 T 65 2 T 75 2 T 85 2 T 95 2 Q 98 5 95 10 T 95 20 T 95 30 T 95 40 T 95 50 T 95 60 T 95 70 T 95 80 T 95 90 Q 90 98 85 95 T 75 95 T 65 95 T 55 95 T 45 95 T 35 95 T 25 95 T 15 95 T 5 95 Q 2 90 5 85 T 5 75 T 5 65 T 5 55 T 5 45 T 5 35 T 5 25 T 5 15 Z' fill='black'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M 5 2 Q 10 8 15 2 T 25 2 T 35 2 T 45 2 T 55 2 T 65 2 T 75 2 T 85 2 T 95 2 Q 98 5 95 10 T 95 20 T 95 30 T 95 40 T 95 50 T 95 60 T 95 70 T 95 80 T 95 90 Q 90 98 85 95 T 75 95 T 65 95 T 55 95 T 45 95 T 35 95 T 25 95 T 15 95 T 5 95 Q 2 90 5 85 T 5 75 T 5 65 T 5 55 T 5 45 T 5 35 T 5 25 T 5 15 Z' fill='black'/%3E%3C/svg%3E");
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.taste-img-wrap:hover {
+    transform: scale(1.05);
+}
+
+.taste-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.taste-name {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.taste-card {
+    position: relative;
+    width: 100%;
+}
+
+
+
+/* БЛОК КАПКЕЙКОВ */
+.cupcakes-section {
+    background-color: #fbf4fa;
+    padding: 6rem 2rem 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cupcakes-container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.cupcakes-left {
+    flex: 1;
+}
+
+.cupcakes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+    gap: 0.8rem;
+}
+
+.cupcake-card {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(168, 60, 88, 0.08);
+    border: 1px solid #f0e6e9;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+
+.cupcake-img-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 80%;
+}
+
+.cupcake-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cupcake-info {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cupcake-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.cupcake-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.cupcake-price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #d14b6a;
+}
+
+.cupcake-desc {
+    font-size: 0.8rem;
+    color: #7a6b70;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.cupcakes-right {
+    flex: 0 0 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+/* БЛОК ОТЗЫВОВ */
+.reviews-section {
+    background-color: #e9a3be;
+    padding: 2rem 2rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cream {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.cream svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.reviews-container {
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 2;
+    padding-top: 4rem;
+}
+
+.reviews-text {
+    flex: 1;
+    max-width: 30rem;
+}
+
+.reviews-title {
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.reviews-desc {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.reviews-stats {
+    display: flex;
+    gap: 2rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.stat-number {
+    font-family: 'Montserrat Black', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: #a83c58;
+}
+
+.stat-text {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+}
+
+.reviews-gallery {
+    flex: 1;
+    position: relative;
+    height: 25rem;
+    margin-top: 3rem;
+}
+
+.review-item {
+    position: absolute;
+    background-color: #fbf4fa;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    border: 4px solid #f06ea9;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+    cursor: pointer;
+    width: 13rem;
+}
+
+.review-item:hover {
+    transform: scale(1.1);
+    z-index: 20;
+}
+
+.review-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.item-1 {
+    top: -10%;
+    left: 0;
+    transform: rotate(-8deg);
+    z-index: 2;
+}
+
+.item-2 {
+    top: -5%;
+    left: 28%;
+    transform: rotate(5deg);
+    z-index: 1;
+}
+
+.item-3 {
+    top: -10%;
+    left: 55%;
+    transform: rotate(-3deg);
+    z-index: 4;
+}
+
+.item-4 {
+    top: 40%;
+    right: 10%;
+    transform: rotate(8deg);
+    z-index: 3;
+}
+
+.item-5 {
+    top: 42%;
+    left: 15%;
+    transform: rotate(-5deg);
+    z-index: 5;
+}
+
+.item-6 {
+    top: -5%;
+    left: 80%;
+    transform: rotate(12deg);
+    z-index: 1;
+}
+
+.item-7 {
+    top: 41%;
+    left: 40%;
+    transform: rotate(3deg);
+    z-index: 6;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 4rem;
+        color: #d14b6a;
+        letter-spacing: 0.5rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .floating-cake {
+        display: none;
+        pointer-events: none;
+    }
+
+    .flower-1 {
+        left: 0rem;
+        top: -1rem;
+    }
+
+    .flower-2 {
+        right: -1rem;
+        top: 2.5rem;
+    }
+
+    .flower-3 {
+        left: 0rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.4rem ;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .benefit-card {
+        width: 8rem;
+        height: 13rem;
+        padding-top: 1rem;
+    }
+
+    .benefit-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .benefit-text {
+        font-size: 0.8rem;
+    }
+
+    .benefit-title {
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .section-title {
+        line-height: 2.5rem;
+    }
+
+    .cakes-grid {
+        gap: 1rem;
+    }
+
+    .cake-card {
+        max-width: 15rem;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .cakes-section {
+        padding-bottom: 2rem;
+    }
+
+    .taste-container {
+        flex-direction: column; 
+        gap: 1.5rem;
+    }
+
+    .taste-left {
+        display: flex;
+        width: 100%;
+        order: -1; 
+        align-items: center;
+        margin-bottom: 0; 
+    }
+
+    .speech-text {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem; 
+    }
+
+    .speech-text::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .character-img {
+        display: none; 
+    }
+
+    .taste-right {
+        width: 100%;
+        order: 1; 
+    }
+
+    .tastes-grid {
+        gap: 0.3rem;
+    }
+
+    .taste-name {
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+        line-height: 1.1;
+    }
+
+    .hit-badge {
+        font-size: 0.6rem;
+        padding: 0.1rem 0.3rem;
+    }
+
+    .cupcakes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   .cupcakes-container {
+        flex-direction: column-reverse; 
+        gap: 1.5rem;
+    }
+
+    .cupcakes-right {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+
+    .cupcakes-right .speech-text {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .cupcakes-right .speech-text::after,
+    .cupcakes-right .character-img {
+        display: none; 
+    }
+
+    .cupcakes-section {
+        padding-top: 3rem;
+    }
+
+    .reviews-container {
+        padding-top: 3rem;
+    }
+
+    .reviews-title {
+        margin-bottom: 0.2rem;
+        font-size: 2rem;
+    }
+
+    .reviews-desc {
+        margin-bottom: 1rem;
+    }
+
+    .reviews-stats {
+        gap: 0.5rem;
+    }
+
+    .stat {
+        max-width: 6rem;
+    }
+
+    .reviews-gallery {
+        display: none;
+    }
+
+    .floating-cake:hover,
+    .cake-card:hover,
+    .cupcake-card:hover,
+    .taste-img-wrap:hover,
+    .review-item:hover,
+    .benefit-card:hover,
+    .speech-text:hover,
+    .packaging-item:hover,
+    .design-card:hover {
+        transform: none !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1100px) {
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem ;
+    }
+    .tastes-grid {
+        grid-template-columns: repeat(4, 1fr) !important; 
+        gap: 0rem; 
+    }
+    .reviews-container {
+        padding-top: 2rem;
+    }
+
+    .reviews-gallery {
+        height: 20rem; 
+    }
+
+    .review-item {
+        width: 9.5rem; 
+        padding: 0.4rem; 
+        border-width: 3px; 
+    }
+
+     .item-1 { top: -5%; left: 0; }
+    .item-2 { top: -2%; left: 30%; }
+    .item-3 { top: -5%; left: 60%; }
+    .item-4 { display: none; }
+    .item-5 { top: 48%; left: 10%; }
+    .item-6 { display: none; }
+    .item-7 { top: 45%; left: 45%; }
+}
+
+@media (min-width: 769px) and (max-width: 900px){
+    .reviews-container {
+        padding-top: 2rem;
+    }
+
+    .reviews-gallery {
+        height: 20rem; 
+    }
+
+    .review-item {
+        width: 9.5rem; 
+        padding: 0.4rem; 
+        border-width: 3px; 
+    }
+
+    .item-1 { top: -4%; left: -5%; }
+    .item-2 { display: none;  }
+    .item-3 { top: -5%; left: 50%; }
+    .item-4 { display: none;  }
+    .item-5 { top: 48%; left: -2%; }
+    .item-6 { display: none; }
+    .item-7 { top: 45%; left: 40%; }
+
+}

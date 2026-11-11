@@ -1,0 +1,413 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sloop Script One';
+    src: url('../fonts/Sloop-ScriptOne.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.header {
+    background-color: rgba(255, 255, 255, 0.92);
+    height: 3.3rem;
+    padding: 0.75rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0 0.5rem 1.875rem rgba(168, 60, 88, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 2.5rem;
+    position: relative;
+    z-index: 9999;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-color: #a83c58;
+    clip-path: polygon(15% 50%, 40% 12%, 100% 20%, 100% 70%, 15% 100%);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle-1 {
+    background-color: #f4d1de;
+    width: 0.78rem;
+    height: 0.78rem;
+    top: 55%;
+    left: 36%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.circle-2 {
+    background-color: #f4d1de;
+    width: 0.875rem;
+    height: 0.875rem;
+    top: 45%;
+    left: 58%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.circle-3 {
+    background-color: #a83c58;
+    width: 0.6rem;
+    height: 0.6rem;
+    top: 55%;
+    left: 36%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.circle-4 {
+    background-color: #a83c58;
+    width: 0.7rem;
+    height: 0.71rem;
+    top: 44.5%;
+    left: 57%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+
+
+.menu {
+    display: flex;
+    gap: 0.32rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #333333f0;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.menu a:hover {
+    background: #fdf5f7;
+    color: #d14b6a;
+    transform: translateY(-2px);
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05) rotate(-3deg);
+}
+
+.vk {
+    background-color: #0088cc;
+}
+
+.tg {
+    background-color: #0077ff;
+}
+
+
+
+
+
+.footer-section {
+    background-color: #e9a3be;
+    padding: 2rem 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    max-width: 90rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2rem;
+}
+
+
+.footer-left {
+    flex: 1;
+    max-width: 60rem;
+}
+
+.footer-title {
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+
+.footer-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.btn-social {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-social:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.footer-right {
+    flex: 0 0 auto;
+    margin-left: 2rem;
+}
+
+.footer-character {
+    width: 15rem;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.2));
+    transform: rotate(10deg);
+}
+
+.footer-bg-text {
+    position: absolute;
+    bottom: -4rem;
+    left: 46.7%;
+    transform: translateX(-50%);
+    font-family: 'Sloop Script One', cursive;
+    font-size: 16rem;
+    font-weight: 800;
+    color: #df90ae;
+    opacity: 0.6;
+    white-space: nowrap;
+    z-index: 1;
+    pointer-events: none;
+    letter-spacing: -0.5rem;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: opacity 0.3s;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+.social-btn.tg {
+    background-color: #0088cc;
+}
+
+.social-btn.vk {
+    background-color: #0077ff;
+}
+
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.8rem;
+    height: 1.2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 200;
+}
+
+.burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #a83c58;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 3rem;
+        line-height: 0.8;
+        margin-bottom: 1.2rem;
+    }
+
+    .btn-social {
+        font-size: 1rem;
+    }
+
+    .footer-bg-text {
+        font-size: 4rem;
+        bottom: 1rem;
+    }
+
+    .footer-character {
+        width: 8rem;
+        transform: none;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #000;
+    }
+
+    .header {
+        position: relative;
+        margin: 0 1rem;
+        padding: 0.75rem 1.25rem;
+        position: relative;
+        height: auto;
+        min-height: 3.3rem;
+    }
+
+    .burger {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        z-index: 200;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-0.5rem);
+        width: 80%;
+        max-width: 20rem;
+        background-color: #ffffff;
+        border-radius: 1.25rem;
+        box-shadow: 0 0.5rem 1.875rem rgba(168, 60, 88, 0.12);
+        border: 1px solid #f0e6e9;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.8rem;
+
+        opacity: 0;
+        visibility: hidden;
+        z-index: 150;
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    }
+
+    .menu.open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    .menu li {
+        width: 100%;
+        list-style: none;
+    }
+
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+        border: 1px solid #f0e6e9;
+        border-radius: 0.8rem;
+        background-color: #fdfafb;
+        box-sizing: border-box;
+    }
+
+    .menu li:last-child a {
+        border-bottom: 1px solid #f0e6e9;
+    }
+}

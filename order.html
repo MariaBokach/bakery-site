@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Оформление заказа — Bonbonie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="page">
+        <div id="header"></div>
+
+        <section class="order-section">
+
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <img src="img/flower.png" class="img-flower flower-1">
+            <img src="img/flower.png" class="img-flower flower-2">
+            <img src="img/flower.png" class="img-flower flower-3">
+            <img src="img/flower.png" class="img-flower flower-4">
+
+            <div class="order-container">
+                <h1 class="section-title">Сделать заказ</h1>
+
+                <form id="orderForm" class="order-form">
+                    
+                    <!-- блок информации о клиенте -->
+                    <div class="form-block">
+                        <h2 class="form-subtitle">Ваши контакты</h2>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" placeholder="Как к вам обращаться?" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Номер телефона *</label>
+                                <input type="tel" id="phone" placeholder="+7 (999) 000-00-00" required>
+                                <span id="phone-error" style="display: none;">Введите корректный номер</span>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="social-type">Соцсеть</label>
+                                <select class="selector">
+                                    <option value="VK">VK</option>
+                                    <option value="Telegram">Telegram</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="social">Никнейм / Ссылка</label>
+                                <input type="text" id="social" placeholder="@username или ссылка">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- блок десертов -->
+                    <div class="form-block">
+                        <h2 class="form-subtitle">Ваш заказ</h2>
+                        <div id="products-container"></div>
+                        <button class="btn-add">+ Добавить еще десерт</button>
+                    </div>
+
+                    <!-- блок доставки -->
+                    <div class="form-block">
+                        <h2 class="form-subtitle">Доставка</h2>
+
+                        <div class="input-group">
+                            <label for="address">Адрес доставки *</label>
+                            <input type="text" id="address" placeholder="Улица, дом, квартира" required>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="date">Дата *</label>
+                                <input type="date" id="date" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="time">Время *</label>
+                                <select id="time" class="selector" required>
+                                    <option value="" disabled selected>Выберите время</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <p class="delivery-note">Доставка осуществляется в течение часа к нужному времени.</p>
+                        <div class="delivery-price-row">
+                            <span>Цена доставки:</span>
+                            <strong id="deliveryPrice">0 ₽</strong>
+                        </div>
+                    </div>
+
+
+                    <!-- блок итоговой цены -->
+                    <div class="total-box">
+                        <div class="total-row">
+                            <span>Итоговая стоимость:</span>
+                            <strong id="totalPrice">0 ₽</strong>
+                        </div>
+                        <button type="submit" class="btn-total">Оплатить</button>
+                        <p class="total-note">После оформления с вами свяжется наш менеджер для подтверждения и уточнения деталей.</p>
+                    </div>
+                </form>
+
+                <!-- блок соц сети -->
+                <div class="manager-order">
+                    <p>Сделать заказ через менеджера:</p>
+                    <div class="manager-links">
+                        <a href="#" class="social-btn tg">Telegram</a>
+                        <a href="#" class="social-btn vk">VK</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/order.js"></script> 
+</body>
+
+</html>
