@@ -14,11 +14,11 @@ const headerHTML = `
     </button>
     
     <ul class="menu" id="menu">
-        <li><a href="../index.html">Главная</a></li>
-        <li><a href="../about.html">О нас</a></li>
-        <li><a href="../desserts.html">Наши десерты</a></li>
-        <li><a href="../order.html">Сделать заказ</a></li>
-        <li><a href="../tasks/task2.html">Задания</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="desserts.html">Наши десерты</a></li>
+        <li><a href="order.html">Сделать заказ</a></li>
+        <li><a href="tasks/task2.html">Задания</a></li>
     </ul>
 
     <div class="social-icons">
